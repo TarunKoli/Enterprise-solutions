@@ -9,7 +9,87 @@
     <link rel="stylesheet" href="./Styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-       
+        .sec6::before{
+            content: '';
+            position: absolute;
+            height: 80%;
+            width: 100%;
+            background: var(--main-lightest);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) skewY(-5deg);
+        }
+        .sec6_img{
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec6_wrap_img{
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            margin-top: 10%;
+        }
+        .sec6_wrap_img .box_dec{
+            top: 20%;
+            left: 47%;
+            background: var(--trie-blue);
+            transform: scale(9,5.5);
+        }
+        .sec6_wrap_img .box_dec::before{
+            top: -32%;
+            right: -27%;
+            background-color: var(--trie-blue);
+            transform: scale(0.3,0.5);
+        }
+        .sec6_wrap_img .sec6_ban{
+            width: 70%;
+            z-index: 2;
+            margin-right: 5%;
+            box-shadow: 6px 8px 7px rgba(0,0,0,0.25);
+        }
+        .sec6_wrap_img .sec6_dots{
+            position: absolute;
+            width: 25%;
+            bottom: -20%;
+            left: 10%;
+        }
+        .sec6_cont{
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec6_cont_wrap{
+            width: 45%;
+            position:relative;
+        }    
+        .sec6_cont_wrap::before{
+            content: '';
+            position: absolute;
+            top: -22%;
+            right: 25%;
+            height: 12rem;
+            width: 12rem;
+            background-color: var(--main-lighter);
+            z-index: -1;
+        }
+        .sec6_cont_wrap h1{
+            font-size: 4.8rem;
+            color: var(--main-heading);
+        }
+        .sec6_cont_wrap p{
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: var(--main-heading);
+            line-height: 2.5rem;
+        }
+        .sec6_cont_wrap img{
+            margin-left: 3rem;
+        }
     </style>
 </head>
 <body>
@@ -213,6 +293,23 @@
             </div>
         </div>
 
+        <div class="sec6">
+            <div class="sec6_img">
+                <div class="sec6_wrap_img">
+                    <span class="box_dec"></span>
+                    <img class="sec6_dots" src="./Assets/dots.png" alt="icon">
+                    <img class="sec6_ban" src="./Assets/sec6.jpg" alt="image">
+                </div>
+            </div>
+            <div class="sec6_cont">
+                <div class="sec6_cont_wrap">
+                    <h1>What's new ?</h1>
+                    <p>ZeeQ is bringing its Cloud Management & Analytics platform to launch Atempo's
+                        Enterprise Backup solutions as services for hassle-free distribution via vendors</p>
+                    <img src="./Assets/logo2.svg" alt="logo_img">
+                </div>
+            </div>
+        </div>
 
     </div>
     
