@@ -337,6 +337,8 @@
                     </div>
                 </div>
                 <div class="carousel">
+                    <span class="box_dec"></span>
+                    <span class="box_dec"></span>
                     <div class="testi_cards">
                         <div class="avatar">
                             <img src="./Assets/avatar.svg" alt="avatar">
@@ -446,6 +448,15 @@
             document.querySelector('.video1 video').play();
             playBtn.style.display="none";
         })
+
+        var navbar = document.querySelector('nav');
+        window.addEventListener("scroll",()=>{
+            if(window.scrollY>25)
+                navbar.classList.add('sticky');
+            else
+                navbar.classList.remove('sticky');
+        })
+
     </script>
 
 </body>

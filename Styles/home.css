@@ -8,6 +8,11 @@ nav{
     justify-content: space-around;
     align-items: center;
     z-index: 10;
+    background: transparent;
+}
+.sticky{
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .box_dec{
     position: absolute;
@@ -955,6 +960,29 @@ font-size: 1.3rem;
         width: 65%;
         height: 150%;
         /* border: 2px solid red; */
+    }
+    .carousel .box_dec:first-child{
+        bottom: -10%;
+        left: 15%;
+        background: var(--main-lighter);
+        z-index: -1;
+    }
+    .carousel .box_dec:first-child::before{
+        bottom: -40%;
+        left: -40%;
+        background: var(--trie-blue);
+    }
+    .carousel .box_dec:nth-child(2){
+        bottom: -10%;
+        left: 60%;
+        background: var(--main);
+        z-index: -1;
+        transform: rotate(-45deg);
+    }
+    .carousel .box_dec:nth-child(2)::before{
+        bottom: -40%;
+        right: -40%;
+        background: var(--trie-blue);
     }
     .carousel .testi_cards{
         /* border: 2px solid red; */
