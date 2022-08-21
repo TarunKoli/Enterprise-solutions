@@ -133,6 +133,8 @@ nav{
 }
 .sec2{
     overflow: visible;
+    height: auto;
+    /* border: 2px solid red; */
 }
 .sec2 .box_dec{
     top: -2%;
@@ -192,8 +194,8 @@ nav{
 }
 .sec2_cont img{
     position: absolute;
-    top: -8%;
-    right: -2.8%;
+    top: -12%;
+    right: -1%;
     z-index: -1;
     width: 30%;
 }
@@ -912,7 +914,7 @@ font-size: 1.3rem;
         line-height: 2.1rem;
     }
     .sec9_cont{
-        height: 30vh;
+        height:31vh;
         display: flex;
         position: relative;
     }
